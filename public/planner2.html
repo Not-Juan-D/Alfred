@@ -1,0 +1,30 @@
+<!-- Task manager code reference source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alfred</title>
+    <link href="./scss/planner2.scss" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+
+  <ul id="myUL">
+    <li>Hit the gym</li>
+    <li class="checked">Pay bills</li>
+    <li>Meet George</li>
+    <li>Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+  </ul>
+  <script src="planner2.js"></script>
+  </body>
+</html>

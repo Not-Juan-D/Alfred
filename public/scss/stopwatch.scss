@@ -1,0 +1,37 @@
+//stopwatch codes referenced from https://jsfiddle.net/2vwcd3a8/ 
+//source found on discussion below https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak 
+
+time {
+    font-size: 75pt;
+}
+
+.container {
+  margin-top: 200px;
+  padding: auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+  
+#time {
+  font-size: 75pt;
+}
+  
+.btns-container {
+  margin: 10px 0;
+}
+  
+#start_btn {
+  background: green;
+  padding: 20px, 20px;
+}
+
+#pause_btn {
+  background: blue;
+  display: none;
+}
+
+#reset_btn {
+  background: red;
+  display: none;
+}

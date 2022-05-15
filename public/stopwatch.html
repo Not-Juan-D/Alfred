@@ -1,0 +1,26 @@
+<!-- stopwatch codes referenced from https://jsfiddle.net/2vwcd3a8/ 
+source found on discussion below https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alfred</title>
+    <link href="./scss/main.scss" rel="stylesheet" type="text/css" />
+    <h1>Stopwatch</h1>
+  </head>
+  <body>
+    <section id = stopwatch>
+      <div class="container">
+        <div id="time"><time>00:00:00</time></div>
+        <div class="btns-container">
+          <button id="start_btn" onclick="start()">START</button>
+          <button id="pause_btn" onclick="pause()">PAUSE</button>
+          <button id="reset_btn" onclick="reset()">RESET</button>
+        </div>
+      </div>
+    </section>
+    <script src="stopwatch.js"></script>
+  </body>
+</html>
