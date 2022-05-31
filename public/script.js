@@ -1,8 +1,6 @@
 // Planner reference code from tutorial content
 // Hide or Show code referenced and retrieved from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-
-
 // Hide or show
 function hideFunction() {
   var x = document.getElementById("hide");

@@ -1,3 +1,5 @@
+@import "typography";
+
 .menu {
   display: grid;
   //max-width: 1200px;
@@ -45,4 +47,23 @@
     padding-top: 20px;
     padding-bottom: 600px;
   }
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+  
+a :hover{
+  background-color: black;
+  border: 3px solid black;
+  color: white;
+  //text-align: center;
+  //padding-top: 20px;
+  //padding-bottom: 280px;
+  font-size: 30px;
+  text-align: center;
+  transition-duration: 0.3s;
 }
