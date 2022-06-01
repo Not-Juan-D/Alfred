@@ -1,0 +1,24 @@
+@import "typography";
+
+#task-grid {
+  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "taskform tasklist";
+}
+
+#taskform {
+  grid-area: taskform;
+  max-width: 400px;
+  margin: auto;
+  label {
+      display: block;
+      width: 100%;
+  }
+}
+
+#tasklist {
+  grid-area: tasklist;
+}

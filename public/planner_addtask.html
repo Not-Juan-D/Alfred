@@ -5,49 +5,57 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Alfred</title>
-        <link href="./scss/planner.scss" rel="stylesheet" type="text/css" />
-        <h1>Planner</h1>
+        <link href="./scss/planner_addtask.scss" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
-    <form id="taskform">
-        <label for="task">Task:</label>
-        <input type="text" name="task" id="taskInput">
-        <br>
+      <h1>Task List</h1>
+          <div id="task-grid">
+            <form id="taskform">
+              <h4>Add new task</h4>
+              <label for="task">Name:</label>
+                <input type="text" name="task" id="taskInput" required>
+                
+                <!-- Date input -->
+                <label for="dueDate">Due Date: </label>                  
+                <input type="date" name="dueDate" id="dueDateInput">
+                
+                <!-- Time input -->
+                <label for="completionTime">Completion Time: </label>
+                <input type="time" name="completionTime" id="completionTimeInput">
+  
+                <!-- Estimated finish time -->
+                <label for="estimatedTime">Estimated completion time (in mins):</label>
+                <input type="number" name="estimatedTime" id="estimatedTimeInput">
+                
+                <!-- Importance -->
+                <label for="importance">Task Importance:</label>
+                <select name="importance" id="priorityInput">
+                  <option value="">Select one</option>
+                  <option value="Low">Low</option>
+                  <option value="High">High</option>
+                </select>
 
-      <!-- Date input -->
-        <label for="dueDate">Due Date: </label>
-        <input type="date" name="dueDate" id="dueDateInput">
-        <br>
+                <!-- Urgency -->
+                <label for="urgency">Task Urgency:</label>
+                <select name="urgency" id="urgencyInput">
+                  <option value="">Select one</option>
+                  <option value="Low">Low</option>
+                  <option value="High">High</option>
+                </select>
+  
+                <br>
+  
+                <button type="submit">Submit</button>
+                
+              </form>
+                <div id="tasklist">
+                  <h4>Full Task List</h4>
+                    <p id="emptyList">You have not added any tasks yet.</p>
+                    <ul></ul>
+                </div>
+          </div>
 
-      <!-- Time input -->
-        <label for="completionTime">Completion Time: </label>
-        <input type="time" name="completionTime" id="completionTimeInput">
-        <br>
-        <label for="estimatedTime">Estimated completion time (in mins):</label>
-        <input type="number" name="estimatedTime" id="estimatedTimeInput">
-        <br>
-
-      <!-- Priority -->
-        <label for="priority">Task Priority:</label>
-        <select name="prority" id="priorityInput">
-          <option value="">Select one</option>
-          <option value="Low">Low</option>
-          <option value="High">High</option>
-        </select>
-        <br>
-
-      <!-- Urgency -->
-        <label for="urgency">Task Urgency:</label>
-        <select name="urgency" id="urgencyInput">
-          <option value="">Select one</option>
-          <option value="Low">Low</option>
-          <option value="High">High</option>
-        </select>
-        <br>
-
-        <button type="submit">Submit</button>
-      </form>
-      <script src="script.js"></script>
-      </body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,70 +1,105 @@
 // Planner reference code from tutorial content
 
 // Planner(Task Manager)
-// Setting up variables for our HTML elements using DOM selection
+// Basic form DOM elements
 const form = document.getElementById("taskform");
-const button = document.querySelector("#taskform > button"); // Complex CSS query
-const tasklist = document.getElementById("tasklist");
-const taskInput = document.getElementById("taskInput");
+const button = document.querySelector("#taskform > button")
 
-// Event listener for Button click
-// This could also be form.addEventListener("submit", function() {...} )
-button.addEventListener("click", function(event) {
-  event.preventDefault(); // Not as necessary for button, but needed for form submit
+// Selector for the tasklist output
+var tasklist = document.querySelector("#tasklist > ul");
 
-  let task = form.elements.task.value; // could be swapped out for line below
-  //let task = taskInput.value;
+// DOM elements for the task input fields
+var taskInput = document.getElementById("taskInput");
+var dueDateInput = document.getElementById("dueDateInput");
+var completionTimeInput = document.getElementById("completionTimeInput");
+var estimatedTimeInput = document.getElementById("estimatedTimeInput");
+var priorityInput = document.getElementById("priorityInput");
 
-  let date = (new Date()).toLocaleDateString('en-US') //Convert to short date format
-
-  // Call the addTask() function using
-  addTask(task, date, "26/03/2021", "Low", ["1", "30"], false);
-
-  // Log out the newly populated taskList everytime the button has been pressed
-  console.log(taskList);
+// Form submission event listener
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    let task = taskInput.value;
+    let dueDate = dueDateInput.value;
+    let completionTime = completionTimeInput.value;
+    let estimatedTime = estimatedTimeInput.value;
+    let priorityRating = priorityInput.options[priorityInput.selectedIndex].value;
+    if (task) {
+        addTask(task, dueDate, estimatedTime, priorityRating, completionTime, false);
+    }
 })
 
-// Create an empty array to store our tasks
-var taskList = [];
+// Create global array to track tasks
+var taskListArray = [];
 
-function addTask(taskDescription, createdDate, dueDate, priorityRating, urgencyRating, estimatedTime, completionStatus) {
-  let task = {
-    taskDescription,
-    createdDate,
-    dueDate,
-    priorityRating,
-    urgencyRating,
-    estimatedTime,
-    completionStatus
-  };
+// Function to add task with user inputs as parameters
+function addTask(taskDescription, dueDate, estimatedTime, priorityRating, completionTime, completionStatus) {
+    let d = new Date();
+    let dateCreated = d.getFullYear();
+    let task = {
+        id: Date.now(),
+        taskDescription,
+        dueDate,
+        dateCreated,
+        estimatedTime,
+        completionTime,
+        priorityRating,
+        estimatedTime,
+        completionStatus
+    };
+    taskListArray.push(task);
+    console.log(taskListArray);
+    renderTask(task);
+}
 
-  // Add the task to our array of tasks
-  taskList.push(task);
+// Function to display task on screen
+function renderTask(task) {
 
-  // Separate the DOM manipulation from the object creation logic
-  renderTask(task);
+    // Call function - checks if a task has been added
+    updateEmpty();
+
+    // Create HTML elements
+    let item = document.createElement("li");
+    item.setAttribute('data-id', task.id);
+    item.innerHTML = "<p>" + task.taskDescription + "</p>";
+
+    tasklist.appendChild(item);
+
+    // Extra Task DOM elements
+    let delButton = document.createElement("button");
+    let delButtonText = document.createTextNode("Delete Task");
+    delButton.appendChild(delButtonText);
+    item.appendChild(delButton);
+
+
+    // Event Listeners for DOM elements
+    delButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        let id = event.target.parentElement.getAttribute('data-id');
+        let index = taskListArray.findIndex(task => task.id === Number(id));
+        removeItemFromArray(taskListArray, index)
+        console.log(taskListArray);
+        updateEmpty();
+        item.remove();
+    })
+
+    // Clear the input form
+    form.reset();
+}
+
+// Function to remove item from array
+function removeItemFromArray(arr, index) {
+    if (index > -1) {
+        arr.splice(index, 1)
+    }
+    return arr;
 }
 
 
-// Function to display the item on the page
-function renderTask(task) {
-  let item = document.createElement("li");
-  item.innerHTML = "<p>" + task.taskDescription + task.dueDate + estimatedTime + "</p>";
-
-  tasklist.appendChild(item);
-
-  // Setup delete button DOM elements
-  let delButton = document.createElement("button");
-  let delButtonText = document.createTextNode("Delete");
-  delButton.appendChild(delButtonText);
-  item.appendChild(delButton); // Adds a delete button to every task
-
-  // Listen for when the 
-  delButton.addEventListener("click", function(event){
-    item.remove(); // Remove the task item from the page when button clicked
-    // Because we used 'let' to define the item, this will always delete the right element
-  })
-  
-  // Clear the value of the input once the task has been added to the page
-  form.reset();
+// Function to hide the 'you haven't added any tasks' text
+function updateEmpty() {
+    if (taskListArray.length > 0) {
+        document.getElementById('emptyList').style.display = 'none';
+    } else {
+        document.getElementById('emptyList').style.display = 'block';
+    }
 }
