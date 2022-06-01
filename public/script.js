@@ -1,17 +1,4 @@
 // Planner reference code from tutorial content
-// Hide or Show code referenced and retrieved from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-
-// Hide or show
-function hideFunction() {
-  var x = document.getElementById("hide");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-
 
 // Planner(Task Manager)
 // Setting up variables for our HTML elements using DOM selection
