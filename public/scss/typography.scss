@@ -7,7 +7,6 @@ html {font-size: 125%;} /*20px*/
 body {
   background: #b8bebe;
   font-family: 'Roboto Flex', sans-serif;
-  font-weight: 400;
   line-height: 1.5;
   color: #000000;
 }
@@ -16,7 +15,7 @@ p {
   margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: 'Roboto Flex', sans-serif;
 //  font-weight: 400;
@@ -57,4 +56,17 @@ h5 {
   font-weight: 700;
 }
 
-small, .text_small {font-size: 0.8rem;}
+.music h6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #1DB954;
+  color: black;
+  border: solid black 3px;
+  text-align: center;
+}
+
+.music a {
+  text-decoration: none;
+}

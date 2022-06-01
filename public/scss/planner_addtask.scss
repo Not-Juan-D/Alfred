@@ -12,7 +12,7 @@
 #taskform {
   grid-area: taskform;
   max-width: 400px;
-  margin: auto;
+  margin: 20 auto;
   label {
       display: block;
       width: 100%;
@@ -21,4 +21,5 @@
 
 #tasklist {
   grid-area: tasklist;
+  margin: 20 auto;
 }
