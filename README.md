@@ -1,5 +1,7 @@
 # Alfred
 
+~~(Sorry for the rather informal and aggressive writing style, I tried to write it like a development brief presentation to my client)~~
+
 ## Design Brief & Iterations
 
 The initial brief was a task and time managing solution for South Korean high school students preparing for the Korean CSAT.
@@ -24,11 +26,43 @@ Stopwatch (As planned)
 
 ~~Break Time Tracker~~ -> Pomodoro Timer
 
-~~Reference List Creator~~ -> Dictionary(Wikipedia) Lookup Page
+~~Reference List Creator~~ -> Dictionary(Wikipedia) Search Page
 
 ~~Music Player~~ -> ***Removed***
 
+Justification for the changes will be listed below.
 
+### Static Covey Quadrant
+
+The planned functions were a bit too complex compared to other visual features.
+
+The whole concept of Alfred is 'Dark but Warm', and keeping it as simple as possible while providing all necessary features.
+
+A static version of my covey quadrant would better suit this concept, since not many visual features are needed to effectively communicate with the user about what they have left to deal with.
+
+### Pomodoro Timer
+
+Break time tracker is indeed a very handy function, but I discovered a very interesting trick which could be done with a pomodoro timer.
+
+In the Korean CSAT, we have two science subjects which run for 30 minutes each, and has a two-minute interval between them.
+
+They are basically time-attack style exams, which require repeated training for students to speed up their problem-solving process in order to achieve satisfying results. Can you see where this is going?
+
+The pomodoro timer is **PERFECT** for this job - 4 quick 30 minute practice tests with 2 minutes of intervals each, and after that getting a well-deserved 20 minute break. Sounds fantastic.
+
+It is not what pomodoro timers are intended to be used for, but desperate times desperate measures. Students use whatever methods they can to excel in the competition.
+
+So I swapped out the Break Time Tracker with the Pomodoro, because I believe this will eventually be more useful for my target users.
+
+### Wikipedia Search Page
+
+I have changed the Reading List Creator into an embedded page where students and users can search things on Wikipedia - not just synonyms, but everything.
+
+This is mainly due to the nature of Korean exam culture - students often use and are sometimes even taught at school about certain tactics or concepts which are beyond high-school level, but does help speed up their problem solving time.
+
+And the Reading List Creator will mainly be used for saving lecture links and learning materials, but this can easily be achieved with the bookmark functions of each web browser, making it not very critical in improving user experience.
+
+Therefore I have made the decision to give students the ability to look up certain concepts and related topics directly from Wikipedia, which will help them save valuable time wandering around the web for them.
 
 ### Music Player 
 
@@ -42,6 +76,8 @@ No one gave a definitive(positive) answer, mainly because they're already used t
 *"I already pay to use certain apps and services. I won't be giving up those premium features to use a service which I don't even know well."*
 
 *"I would have to migrate everything - including playlists and preferences. So no."*
+
+*"Good idea, but Why would you need a music player embedded in a planner?"*
 
 
 Furthermore, the players itself might function as a distraction to my potential users.
@@ -64,4 +100,3 @@ Iphones for example, we can just swap the screen to access your favourite servic
 Why would someone give up the service they were enjoying so much that they sometimes wouldn't even bother paying for a premium subscription, when you can rather choose to just 'swap' between apps and windows?
 
 
-~~(Sorry for the aggressive writing style, I tried to write it like a development brief to my client, as I read from a Slack post saying it's basicially telling them they're wrong, which in this case they are)~~
