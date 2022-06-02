@@ -6,6 +6,12 @@
 
 The initial brief was a task and time managing solution for South Korean high school students preparing for the Korean CSAT.
 
+Alfred is designed to be fully functional in both mobile and pc environments, but its design can be fully appreciated when viewed on mobile devices.
+
+This is because my target users, who are high school students, are more likely to use smartphones over laptop computers when planning their studies.
+
+***
+
 To further enhance their experience, the following sub-functions were planned aside from the usual planner(task manager) function;
 
 1. Interactive Covey Quadrant
