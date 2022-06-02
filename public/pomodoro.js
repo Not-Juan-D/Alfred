@@ -11,10 +11,10 @@ const timer = {
 
 let interval;
 
-const buttonSound = new Audio('button-sound.mp3');
+//const buttonSound = new Audio('button-sound.mp3');
 const mainButton = document.getElementById('js-btn');
 mainButton.addEventListener('click', () => {
-  buttonSound.play();
+//  buttonSound.play();
   const { action } = mainButton.dataset;
   if (action === 'start') {
     startTimer();
@@ -77,7 +77,7 @@ function startTimer() {
         new Notification(text);
       }
 
-      document.querySelector(`[data-sound="${timer.mode}"]`).play();
+      //document.querySelector(`[data-sound="${timer.mode}"]`).play();
 
       startTimer();
     }

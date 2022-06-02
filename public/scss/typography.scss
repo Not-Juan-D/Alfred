@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Flex:400');
 
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 html {font-size: 125%;} /*20px*/
 
 body {
