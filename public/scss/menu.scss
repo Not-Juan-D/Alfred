@@ -1,5 +1,5 @@
 //Typography
-@import "typography";
+@import "typography", "spotify";
 
 .button {
   background-color: black;
@@ -53,13 +53,11 @@ p {
   }
 }
 
-
-
 .menu a {
   text-decoration: none;
   color: black;
 }
-  
+
 a :hover{
   background-color: black;
   border: 3px solid black;
@@ -68,10 +66,4 @@ a :hover{
   text-align: center;
   transition-duration: 0.3s;
 }
-
-
-.music :hover {
-  background-color: black;
-  color: #1DB954;
-  transition-duration: 0.3s;
-}
+  

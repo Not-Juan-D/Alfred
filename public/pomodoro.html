@@ -1,14 +1,23 @@
-<!-- Spotify API code from Spotify for Developers, 2022 - Retrieved from https://developer.spotify.com/documentation/web-playback-sdk/quick-start/ -->
+<!-- Task manager code reference source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp -->
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Spotify Web Playback SDK Quick Start</title>
-    <link href="./scss/main.scss" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <h1>Music</h1>
-    <button id="togglePlay">Toggle Play</button>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alfred</title>
+    <link href="./scss/pomodoro.scss" rel="stylesheet" type="text/css" />
+    <h1>Pomodoro</h1>
+  </head>
+
+  <body>
+
+
+
+    <div class = "music">
+      <!--<a href = "spotify.html"><h6>Music</h6></a>-->
+      <button id="togglePlay">Play / Pause Music</button>
+    </div>
 
     <script src="https://sdk.scdn.co/spotify-player.js"></script>
     <script>
@@ -49,5 +58,6 @@
             player.connect();
         }
     </script>
-</body>
+
+  </body>
 </html>

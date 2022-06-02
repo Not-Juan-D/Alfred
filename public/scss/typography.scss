@@ -1,5 +1,3 @@
-//typography boilerplate created and sourced from 
-
 @import url('https://fonts.googleapis.com/css?family=Roboto+Flex:400');
 
 html {font-size: 125%;} /*20px*/
@@ -54,19 +52,4 @@ h5 {
   color: black;
   min-width: 500px;
   font-weight: 700;
-}
-
-.music h6 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 30px;
-  font-weight: 700;
-  background-color: #1DB954;
-  color: black;
-  border: solid black 3px;
-  text-align: center;
-}
-
-.music a {
-  text-decoration: none;
 }
