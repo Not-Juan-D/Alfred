@@ -46,6 +46,10 @@ The whole concept of Alfred is 'Dark but Warm', and keeping it as simple as poss
 
 A static version of my covey quadrant would better suit this concept, since not many visual features are needed to effectively communicate with the user about what they have left to deal with.
 
+The new design only displays the number of planned tasks in each quadrant in bold letters, helping the user get a bird's eye view about their current status.
+
+Also the actual task adder / manager has been moved to a separate page, so users can enjoy a more simple but bold interface.
+
 ## Pomodoro Timer
 
 Break time tracker is indeed a handy function, but I discovered a very interesting trick which could be done with a pomodoro timer.
@@ -68,19 +72,27 @@ This is mainly due to the nature of Korean exam culture - students often use and
 
 And the Reading List Creator will mainly be used for saving lecture links and learning materials, but this can easily be achieved with the bookmark functions of each web browser, making it not very critical in improving user experience.
 
-So I have made the decision to give students the ability to look up certain concepts and related topics directly from Wikipedia, which will help them save valuable time wandering around the web for them.
+So I have made the decision to give students the ability to look up certain concepts and related topics which are **NOT** usually taught in any high school level classrooms directly from Wikipedia.
 
 This way they will benefit more directly from my solution, enhancing their problem-solving speed with highly refined tactics and concepts in hand.
 
+Yes, some may question 'Why embed it, when you can just search up way more info on the web?'. 
+
+This is to eliminate any chance of being distracted from your studies, which happens quite often during lookups and searches.
+
+I'm pretty sure we all had experience trying to look up a confusing study topic, but somehow ended up in a weird corner of Youtube or a meme-filled subreddit.
+
+My solution **ONLY** displays Wikipedia pages as search results, so users and students won't have to worry about wandering off-path anymore while using Alfred.
+
 ## Music Player 
 
-I have decided not to include a music player in my web-app prototype based on user and technical research.
+I have decided **NOT** to include a music player in my web-app prototype based on user and technical research.
 
 To justify, I went back to my 20 context research participants and decided to ask them whether they would be eager use an embedded music player rather than the services they were currently using.
 
-I was lucky enough to get in touch with a handful of former participants, and interview them face to face or via discord call.
+I was lucky enough to get in direct touch with a handful of former participants since I have now relocated back to South Korea, and interview them face to face or via discord call.
 
-However, no one gave a definitive(positive) answer, mainly because they're already used to their preferred services or apps, and they would have to 'redesign' everything if they decided to move to an embedded player. 
+However, no one gave a definitive(positive) answer to my question, mainly because they're already used to their preferred services or apps, and would have to 'redesign' everything if they decided to move to an embedded player. 
 
 Here are some quotes from the sessions;
 
@@ -96,7 +108,7 @@ Here are some quotes from the sessions;
 
 ***
 
-Furthermore, the players itself might function as a distraction to my potential users.
+Furthermore, the players itself might function as a distraction to my potential users, as stated in one of the quotes above.
 
 My target users are students preparing for the Korean CSAT, which requires insane levels of concentration even when you're studying for it. 
 
@@ -107,7 +119,6 @@ You can easily find mobile service providers advertising their so-called 'studen
 This is also why I designed Alfred's UI to be rather vague and dull - to eliminate any chances of being distracted while providing all necessary functions to my users. 
 
 If I decide to add a fully operational online music player to my web app, my users would likely see this as another possible source of distraction and eventually choose not to use Alfred as their task and time managing solution.
-
 
 And even if the user is favorable of listening to music while studying, switching between apps and windows are just two swipes or presses away. 
 
