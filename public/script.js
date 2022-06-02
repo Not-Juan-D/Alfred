@@ -1,4 +1,4 @@
-// Planner reference code from tutorial content
+// Planner reference code from tutorial content (Mostly from Week 9)
 
 // Planner(Task Manager)
 // Basic form DOM elements
@@ -14,6 +14,7 @@ var dueDateInput = document.getElementById("dueDateInput");
 var completionTimeInput = document.getElementById("completionTimeInput");
 var estimatedTimeInput = document.getElementById("estimatedTimeInput");
 var priorityInput = document.getElementById("priorityInput");
+var urgencyInput = document.getElementById("urgencyInput");
 
 // Form submission event listener
 form.addEventListener("submit", function(event) {
@@ -23,8 +24,9 @@ form.addEventListener("submit", function(event) {
     let completionTime = completionTimeInput.value;
     let estimatedTime = estimatedTimeInput.value;
     let priorityRating = priorityInput.options[priorityInput.selectedIndex].value;
+    let urgencyRating = urgencyInput.options[urgencyInput.selectedIndex].value;
     if (task) {
-        addTask(task, dueDate, estimatedTime, priorityRating, completionTime, false);
+        addTask(task, dueDate, estimatedTime, priorityRating, urgencyRating, completionTime, false);
     }
 })
 
@@ -32,7 +34,7 @@ form.addEventListener("submit", function(event) {
 var taskListArray = [];
 
 // Function to add task with user inputs as parameters
-function addTask(taskDescription, dueDate, estimatedTime, priorityRating, completionTime, completionStatus) {
+function addTask(taskDescription, dueDate, estimatedTime, priorityRating, urgencyRating, completionTime, completionStatus) {
     let d = new Date();
     let dateCreated = d.getFullYear();
     let task = {
@@ -43,6 +45,7 @@ function addTask(taskDescription, dueDate, estimatedTime, priorityRating, comple
         estimatedTime,
         completionTime,
         priorityRating,
+        urgencyRating,
         estimatedTime,
         completionStatus
     };
@@ -53,6 +56,9 @@ function addTask(taskDescription, dueDate, estimatedTime, priorityRating, comple
 
 // Function to display task on screen
 function renderTask(task) {
+
+    //Local storage
+    localStorage.setItem('taskListArray', JSON.stringify(taskListArray));
 
     // Call function - checks if a task has been added
     updateEmpty();
@@ -103,3 +109,6 @@ function updateEmpty() {
         document.getElementById('emptyList').style.display = 'block';
     }
 }
+
+
+//Array.filter(priorityRating => priorityRating == 'High', urgencyRating => urgencyRating == 'High').length

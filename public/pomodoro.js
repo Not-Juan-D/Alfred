@@ -1,4 +1,4 @@
-//pomodoro code referenced from "How to build a Pomodoro Timer App with JavaScript" by Ayo, Freshman, Apr. 8th 2022
+//pomodoro code referenced from "How to build a Pomodoro Timer App with JavaScript" written by Ayo, Freshman, Apr. 8th, 2022
 //code retrieved from https://freshman.tech/pomodoro-timer/
 
 const timer = {
