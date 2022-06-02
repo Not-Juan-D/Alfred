@@ -1,4 +1,4 @@
-@import "spotify";
+@import "typography", "spotify";
 
 //pomodoro code referenced from "How to build a Pomodoro Timer App with JavaScript" by Ayo, Freshman, Apr. 8th 2022
 //code retrieved from https://freshman.tech/pomodoro-timer/
@@ -25,9 +25,9 @@ html {
 }
 
 :root {
-  --pomodoro: #b8bebe;
-  --shortBreak: #f0d89f;
-  --longBreak: black;
+  --pomodoro: #f0d89f;
+  --shortBreak: #b8bebe;
+  --longBreak: #7c8080;
 }
 
 body {
@@ -65,7 +65,7 @@ progress::-webkit-progress-value {
 .clock {
   margin-top: 50px;
   margin-bottom: 30px;
-  font-size: 15rem;
+  font-size: 10rem;
   line-height: 1;
   display: flex;
   align-items: center;
@@ -77,8 +77,8 @@ progress::-webkit-progress-value {
   height: 28px;
   cursor: pointer;
   box-shadow: none;
-  font-weight: 300;
-  color: #fff;
+  font-weight: 700;
+  color: black;
   border: 1px solid transparent;
   margin: 0px;
   border-radius: 4px;
@@ -87,16 +87,17 @@ progress::-webkit-progress-value {
 }
 
 .mode-button.active {
-  border-color: #fff;
+  border-color: white;
+  border-width: 3px;
 }
 
 .main-button {
   cursor: pointer;
-  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+//  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
   font-size: 22px;
   height: 55px;
   text-transform: uppercase;
-  color: hsl(175, 26%, 41%);
+  color: black;
   font-weight: bold;
   width: 200px;
   background-color: white;
@@ -113,7 +114,7 @@ button:focus, button:active {
 }
 
 .main-button.active {
-  transform: translateY(6px);
+//  transform: translateY(6px);
   box-shadow: none;
   outline: none;
 }
@@ -128,9 +129,9 @@ button:focus, button:active {
   }
 }
 
-
-
+//spotify remote style
 #togglePlay {
+    margin-top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 30px;

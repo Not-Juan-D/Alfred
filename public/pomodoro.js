@@ -3,7 +3,7 @@
 
 const timer = {
   pomodoro: 30,
-  shortBreak: 5,
+  shortBreak: 2,
   longBreak: 20,
   longBreakInterval: 4,
   sessions: 0,
