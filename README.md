@@ -42,7 +42,7 @@ A static version of my covey quadrant would better suit this concept, since not 
 
 ## Pomodoro Timer
 
-Break time tracker is indeed a very handy function, but I discovered a very interesting trick which could be done with a pomodoro timer.
+Break time tracker is indeed a handy function, but I discovered a very interesting trick which could be done with a pomodoro timer.
 
 In the Korean CSAT, we have two science subjects which run for 30 minutes each, and has a two-minute interval between them.
 
@@ -72,6 +72,7 @@ To justify, I went back to my 20 context research participants and asked them wh
 
 No one gave a definitive(positive) answer, mainly because they're already used to their preferred services or apps, and they would have to 'redesign' everything if they decided to move to an embedded player. Here are some quotes from users;
 
+***
 
 *"I already pay to use certain apps and services. I won't be giving up those premium features to use a service which I don't even know well."*
 
@@ -79,6 +80,7 @@ No one gave a definitive(positive) answer, mainly because they're already used t
 
 *"Good idea, but Why would you need a music player embedded in a planner?"*
 
+***
 
 Furthermore, the players itself might function as a distraction to my potential users.
 
@@ -98,5 +100,3 @@ And even if the user is favorable of listening to music while studying, switchin
 Iphones for example, we can just swap the screen to access your favourite service. If you're on PC, just tab out and tab in. It's really not that hard.
 
 Why would someone give up the service they were enjoying so much that they sometimes wouldn't even bother paying for a premium subscription, when you can rather choose to just 'swap' between apps and windows?
-
-
