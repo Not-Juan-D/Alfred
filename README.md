@@ -68,15 +68,21 @@ This is mainly due to the nature of Korean exam culture - students often use and
 
 And the Reading List Creator will mainly be used for saving lecture links and learning materials, but this can easily be achieved with the bookmark functions of each web browser, making it not very critical in improving user experience.
 
-Therefore I have made the decision to give students the ability to look up certain concepts and related topics directly from Wikipedia, which will help them save valuable time wandering around the web for them.
+So I have made the decision to give students the ability to look up certain concepts and related topics directly from Wikipedia, which will help them save valuable time wandering around the web for them.
+
+This way they will benefit more directly from my solution, enhancing their problem-solving speed with highly refined tactics and concepts in hand.
 
 ## Music Player 
 
 I have decided not to include a music player in my web-app prototype based on user and technical research.
 
-To justify, I went back to my 20 context research participants and asked them whether they would be eager use an embedded music player rather than the services they were currently using.
+To justify, I went back to my 20 context research participants and decided to ask them whether they would be eager use an embedded music player rather than the services they were currently using.
 
-No one gave a definitive(positive) answer, mainly because they're already used to their preferred services or apps, and they would have to 'redesign' everything if they decided to move to an embedded player. Here are some quotes from users;
+I was lucky enough to get in touch with a handful of former participants, and interview them face to face or via discord call.
+
+However, no one gave a definitive(positive) answer, mainly because they're already used to their preferred services or apps, and they would have to 'redesign' everything if they decided to move to an embedded player. 
+
+Here are some quotes from the sessions;
 
 ***
 
@@ -85,6 +91,8 @@ No one gave a definitive(positive) answer, mainly because they're already used t
 *"I would have to migrate everything - including playlists and preferences. So no."*
 
 *"Good idea, but Why would you need a music player embedded in a planner?"*
+
+*"Nah. I didn't even listen to music during my prepp days. Think it'll only distract students, y'know. Good music is like drugs when you're studying for an exam haha."*
 
 ***
 
@@ -98,11 +106,15 @@ You can easily find mobile service providers advertising their so-called 'studen
 
 This is also why I designed Alfred's UI to be rather vague and dull - to eliminate any chances of being distracted while providing all necessary functions to my users. 
 
-If I decide to add a fully operational online music player to my web app, my users are likely to see this as another possible source of distraction and eventually choose not to use Alfred as their task and time managing solution.
+If I decide to add a fully operational online music player to my web app, my users would likely see this as another possible source of distraction and eventually choose not to use Alfred as their task and time managing solution.
 
 
 And even if the user is favorable of listening to music while studying, switching between apps and windows are just two swipes or presses away. 
 
-Iphones for example, we can just swap the screen to access your favourite service. If you're on PC, just tab out and tab in. It's really not that hard.
+Mobile phones for example, we can just swap or touch the screen a couple of times to access your favourite service. If you're on PC, tab out and tab in. 
 
-Why would someone give up the service they were enjoying so much that they sometimes wouldn't even bother paying for a premium subscription, when you can rather choose to just 'swap' between apps and windows?
+Besides, why would someone give up the service they were enjoying so much that they sometimes wouldn't even bother paying for a premium subscription, when you can rather choose to just 'swap' with ease between apps and windows?
+
+A few swaps and presses are not a big deal, compared to rebuilding all your playlists and stuff on a new environment you're not very familiar of.
+
+So based on the points stated above, a music player or controller of any kind was excluded from the final prototype.
