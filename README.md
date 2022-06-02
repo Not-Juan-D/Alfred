@@ -8,27 +8,27 @@ The initial brief was a task and time managing solution for South Korean high sc
 
 To further enhance their experience, the following sub-functions were planned aside from the usual planner(task manager) function;
 
-Interactive Covey Quadrant
+1. Interactive Covey Quadrant
 
-Stopwatch
+2. Stopwatch
 
-Break Time Tracker
+3. Break Time Tracker
 
-Reference List Creator
+4. Reference List Creator
 
-Music Player
+5. Music Player
 
 After some self-evaluation and iteration, the web app prototype seen here contains the following features;
 
-~~Interactive Covey Quadrant~~ -> Static Covey Quadrant
+1. ~~Interactive Covey Quadrant~~ -> Static Covey Quadrant
 
-Stopwatch (As planned)
+2. Stopwatch (As planned)
 
-~~Break Time Tracker~~ -> Pomodoro Timer
+3. ~~Break Time Tracker~~ -> Pomodoro Timer
 
-~~Reference List Creator~~ -> Dictionary(Wikipedia) Search Page
+4. ~~Reference List Creator~~ -> Dictionary(Wikipedia) Search Page
 
-~~Music Player~~ -> ***Removed***
+5. ~~Music Player~~ -> ***Removed***
 
 Justification for the changes will be listed below.
 
