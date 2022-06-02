@@ -7,17 +7,25 @@ The initial brief was a task and time managing solution for South Korean high sc
 To further enhance their experience, the following sub-functions were planned aside from the usual planner(task manager) function;
 
 Interactive Covey Quadrant
+
 Stopwatch
+
 Break Time Tracker
+
 Reference List Creator
+
 Music Player
 
 After some self-evaluation and iteration, the web app prototype seen here contains the following features;
 
 ~~Interactive Covey Quadrant~~ -> Static Covey Quadrant
+
 Stopwatch (As planned)
+
 ~~Break Time Tracker~~ -> Pomodoro Timer
+
 ~~Reference List Creator~~ -> Dictionary(Wikipedia) Lookup Page
+
 ~~Music Player~~ -> ***Removed***
 
 
@@ -56,4 +64,4 @@ Iphones for example, we can just swap the screen to access your favourite servic
 Why would someone give up the service they were enjoying so much that they sometimes wouldn't even bother paying for a premium subscription, when you can rather choose to just 'swap' between apps and windows?
 
 
-~~(I tried to write it styled as a development brief presentation to my client, as I read from a Slack post saying it's basicially telling them they're wrong, which in this case they are)~~
+~~(Sorry for the aggressive writing style, I tried to write it like a development brief to my client, as I read from a Slack post saying it's basicially telling them they're wrong, which in this case they are)~~
