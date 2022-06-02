@@ -11,8 +11,50 @@
   </head>
 
   <body>
-
-
+    <!-- pomodoro code referenced from "How to build a Pomodoro Timer App with JavaScript" by Ayo, Freshman, Apr. 8th 2022
+    retrieved from https://freshman.tech/pomodoro-timer/ -->
+    <main class="app">
+      <progress id="js-progress" value="0"></progress>
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <div class="button-group mode-buttons" id="js-mode-buttons">
+          <button
+            data-mode="pomodoro"
+            class="button active mode-button"
+            id="js-pomodoro"
+          >
+            Pomodoro
+          </button>
+          <button
+            data-mode="shortBreak"
+            class="button mode-button"
+            id="js-short-break"
+          >
+            Short break
+          </button>
+          <button
+            data-mode="longBreak"
+            class="button mode-button"
+            id="js-long-break"
+          >
+            Long break
+          </button>
+        </div>
+        <div class="clock" id="js-clock">
+          <span id="js-minutes">25</span>
+          <span class="separator">:</span>
+          <span id="js-seconds">00</span>
+        </div>
+        <button class="main-button" data-action="start" id="js-btn">
+          Start
+        </button>
+      </div>
+    </main>
+    <div class="hidden">
+      <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+      <audio src="break.mp3" data-sound="shortBreak"></audio>
+      <audio src="break.mp3" data-sound="longBreak"></audio>
+    </div>
 
     <div class = "music">
       <!--<a href = "spotify.html"><h6>Music</h6></a>-->
@@ -20,6 +62,7 @@
     </div>
 
     <script src="https://sdk.scdn.co/spotify-player.js"></script>
+
     <script>
         window.onSpotifyWebPlaybackSDKReady = () => {
             const token = 'BQC2S_5f1SLxwqsaM4BYkJCmwDEzrURGYD04K6vGZha3yANGkEnJYzKSgtYC3pfbmX8T51Sar0yISvt_IGDaaUf5rH6siOhqmUysu-DVtTt_vzGaXZ74cBhIBvBFYOp7KGeWcJcHWyFCqlUXDg4mP7FnXm5JtI0nQ_HnKmlrExQISEYV2djiNutyT5M';
@@ -58,6 +101,8 @@
             player.connect();
         }
     </script>
+  
+  <script src="pomodoro.js"></script>
 
   </body>
 </html>
