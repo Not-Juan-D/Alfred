@@ -2,7 +2,7 @@
 
 ~~(Sorry for the rather informal and aggressive writing style, I tried to write it like a development brief presentation to my client)~~
 
-## Design Brief & Iterations
+# Design Brief & Iterations
 
 The initial brief was a task and time managing solution for South Korean high school students preparing for the Korean CSAT.
 
@@ -32,7 +32,7 @@ Stopwatch (As planned)
 
 Justification for the changes will be listed below.
 
-### Static Covey Quadrant
+## Static Covey Quadrant
 
 The planned functions were a bit too complex compared to other visual features.
 
@@ -40,7 +40,7 @@ The whole concept of Alfred is 'Dark but Warm', and keeping it as simple as poss
 
 A static version of my covey quadrant would better suit this concept, since not many visual features are needed to effectively communicate with the user about what they have left to deal with.
 
-### Pomodoro Timer
+## Pomodoro Timer
 
 Break time tracker is indeed a very handy function, but I discovered a very interesting trick which could be done with a pomodoro timer.
 
@@ -54,7 +54,7 @@ It is not what pomodoro timers are intended to be used for, but desperate times 
 
 So I swapped out the Break Time Tracker with the Pomodoro, because I believe this will eventually be more useful for my target users.
 
-### Wikipedia Search Page
+## Wikipedia Search Page
 
 I have changed the Reading List Creator into an embedded page where students and users can search things on Wikipedia - not just synonyms, but everything.
 
@@ -64,7 +64,7 @@ And the Reading List Creator will mainly be used for saving lecture links and le
 
 Therefore I have made the decision to give students the ability to look up certain concepts and related topics directly from Wikipedia, which will help them save valuable time wandering around the web for them.
 
-### Music Player 
+## Music Player 
 
 I have decided not to include a music player in my web-app prototype based on user and technical research.
 
