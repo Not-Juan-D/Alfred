@@ -58,53 +58,6 @@ retrieved from https://freshman.tech/pomodoro-timer/ -->
     </div>
     -->
 
-
-    <div class = "music">
-      <!--<a href = "spotify.html"><h6>Music</h6></a>-->
-      <button id="togglePlay">Play / Pause Music</button>
-    </div>
-
-    <script src="https://sdk.scdn.co/spotify-player.js"></script>
-
-    <script>
-        window.onSpotifyWebPlaybackSDKReady = () => {
-            const token = 'BQC2S_5f1SLxwqsaM4BYkJCmwDEzrURGYD04K6vGZha3yANGkEnJYzKSgtYC3pfbmX8T51Sar0yISvt_IGDaaUf5rH6siOhqmUysu-DVtTt_vzGaXZ74cBhIBvBFYOp7KGeWcJcHWyFCqlUXDg4mP7FnXm5JtI0nQ_HnKmlrExQISEYV2djiNutyT5M';
-            const player = new Spotify.Player({
-                name: 'Web Playback SDK Quick Start Player',
-                getOAuthToken: cb => { cb(token); },
-                volume: 0.5
-            });
-
-            // Ready
-            player.addListener('ready', ({ device_id }) => {
-                console.log('Ready with Device ID', device_id);
-            });
-
-            // Not Ready
-            player.addListener('not_ready', ({ device_id }) => {
-                console.log('Device ID has gone offline', device_id);
-            });
-
-            player.addListener('initialization_error', ({ message }) => {
-                console.error(message);
-            });
-
-            player.addListener('authentication_error', ({ message }) => {
-                console.error(message);
-            });
-
-            player.addListener('account_error', ({ message }) => {
-                console.error(message);
-            });
-
-            document.getElementById('togglePlay').onclick = function() {
-              player.togglePlay();
-            };
-
-            player.connect();
-        }
-    </script>
-  
   <script src="pomodoro.js"></script>
 
   </body>

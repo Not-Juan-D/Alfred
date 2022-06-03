@@ -1,6 +1,14 @@
 //typography
 @import "typography";
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 .cov {
   display: grid;
   grid-template-columns: 300px 300px;

@@ -16,6 +16,16 @@ var estimatedTimeInput = document.getElementById("estimatedTimeInput");
 var priorityInput = document.getElementById("priorityInput");
 var urgencyInput = document.getElementById("urgencyInput");
 
+
+
+// count function variables
+var upperRight = 0;
+var upperLeft = 0;
+var lowerLeft = 0;
+var lowerRight = 0;
+
+
+
 // Form submission event listener
 form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -52,6 +62,8 @@ function addTask(taskDescription, dueDate, estimatedTime, priorityRating, urgenc
     taskListArray.push(task);
     console.log(taskListArray);
     renderTask(task);
+
+    countTask(task);
 }
 
 // Function to display task on screen
@@ -91,6 +103,39 @@ function renderTask(task) {
     // Clear the input form
     form.reset();
 }
+
+
+
+function countTask(task) {
+    //Count the number of 'High' in the task array
+        for (i = 0; i < task.length; i++) {
+            var count = 0;
+            if (task[i] == 'High') {
+                count++;
+            }
+        }  
+    //Urgency and Priority both High
+        if (count == 2) {
+            upperRight++;
+        }
+    //Urgency and Priority both Low
+        if (count == 0) {
+            lowerLeft++;
+        }
+    //Urgency or Priority High (only one of them)
+        if (count == 1) {
+    //Priority High, Urgency Low
+            if (task[7] == 'High') {
+                upperLeft++;
+            } 
+    //Priority Low, Urgency High
+            else {
+                lowerRight++;
+            }
+        }
+    }
+
+
 
 // Function to remove item from array
 function removeItemFromArray(arr, index) {

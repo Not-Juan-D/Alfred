@@ -62,7 +62,7 @@ The pomodoro timer is **PERFECT** for this job - 4 quick 30 minute practice test
 
 It is not what pomodoro timers are intended to be used for, but desperate times desperate measures. Students use whatever methods they can to excel in the competition.
 
-So I swapped out the Break Time Tracker with the Pomodoro, because I believe this will eventually be more useful for my target users.
+So I swapped out the Break Time Tracker with the Pomodoro, because I believe this will eventually be more useful for my target users who are mainly students preparing for the Korean CSAT and will take the two science exams.
 
 ## Wikipedia Search Page
 
@@ -82,7 +82,7 @@ This is to eliminate any chance of being distracted from your studies, which hap
 
 I'm pretty sure we all had experience trying to look up a confusing study topic, but somehow ended up in a weird corner of Youtube or a meme-filled subreddit.
 
-My solution **ONLY** displays Wikipedia pages as search results, so users and students won't have to worry about wandering off-path anymore while using Alfred.
+My solution **ONLY** displays Wikipedia pages as search results, so users and students won't have to worry about wandering off-path anymore while looking up topics or information.
 
 ## Music Player 
 
@@ -118,7 +118,7 @@ You can easily find mobile service providers advertising their so-called 'studen
 
 This is also why I designed Alfred's UI to be rather vague and dull - to eliminate any chances of being distracted while providing all necessary functions to my users. 
 
-If I decide to add a fully operational online music player to my web app, my users would likely see this as another possible source of distraction and eventually choose not to use Alfred as their task and time managing solution.
+If I decide to add a fully operational online music player to my web app, my users may end up seeing this as another possible source of distraction and eventually choose not to use Alfred as their task and time managing solution.
 
 And even if the user is favorable of listening to music while studying, switching between apps and windows are just two swipes or presses away. 
 
@@ -127,5 +127,7 @@ Mobile phones for example, we can just swap or touch the screen a couple of time
 Besides, why would someone give up the service they were enjoying so much that they sometimes wouldn't even bother paying for a premium subscription, when you can rather choose to just 'swap' with ease between apps and windows?
 
 A few swaps and presses are not a big deal, compared to rebuilding all your playlists and stuff on a new environment you're not very familiar of.
+
+Moreover, almost every wired and wireless earphones and headsets now come with an integrated remote of its own, so even the simplest remotes and controls are not very critical or helpful to the user's convenience.
 
 So based on the points stated above, a music player or controller of any kind was excluded from the final prototype.
