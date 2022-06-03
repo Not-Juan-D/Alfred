@@ -1,3 +1,6 @@
+//Covey quadrant kanban board code referenced from https://www.youtube.com/watch?v=ijQ6dCughW8 by dcode, Sep. 20th, 2021
+//Code retrieved from https://github.com/dcode-youtube/kanban-board
+
 export default class KanbanAPI {
 	static getItems(columnId) {
 		const column = read().find(column => column.id == columnId);
@@ -86,6 +89,10 @@ function read() {
 
 	if (!json) {
 		return [
+			{
+				id: 0,
+				items: []
+			},
 			{
 				id: 1,
 				items: []

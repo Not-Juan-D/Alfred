@@ -1,3 +1,6 @@
+//Covey quadrant kanban board code referenced from https://www.youtube.com/watch?v=ijQ6dCughW8 by dcode, Sep. 20th, 2021
+//Code retrieved from https://github.com/dcode-youtube/kanban-board
+
 @import "typography";
 
 .kanban {
@@ -57,7 +60,7 @@
 	padding: 10px 0;
 	font-size: 12px;
 	color: black;
-	background: rgba(0, 0, 0, 0.1);
+	background: #f0d89f;
 	border: none;
 //	border-radius: 5px;
 	cursor: pointer;
