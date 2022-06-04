@@ -26,7 +26,7 @@ To further enhance their experience, the following sub-functions were planned as
 
 After some self-evaluation and iteration, the web app prototype seen here contains the following features;
 
-1. ~~Interactive Covey Quadrant~~ -> Static Covey Quadrant
+1. ~~Interactive Covey Quadrant~~ -> Kanban Quadrant
 
 2. Stopwatch (As planned)
 
@@ -38,17 +38,17 @@ After some self-evaluation and iteration, the web app prototype seen here contai
 
 Justification for the changes will be listed below.
 
-## Static Covey Quadrant
+## Kanban Quadrant
 
-The planned functions were a bit too complex compared to other visual features.
+The planned interactive quadrant was a bit too complex compared to other visual features.
 
 The whole concept of Alfred is 'Dark but Warm', and keeping it as simple as possible while providing all necessary features.
 
-A static version of my covey quadrant would better suit this concept, since not many visual features are needed to effectively communicate with the user about what they have left to deal with.
+A static version would better suit this concept, since not many visual features are needed to effectively communicate with the user about what they have left to deal with.
 
-The new design only displays the number of planned tasks in each quadrant in bold letters, helping the user get a bird's eye view about their current status.
+The new design allows users to input whatever detail they like into each quadrant, and can move items around from one quadrant to another if they want to change things.
 
-Also the actual task adder / manager has been moved to a separate page, so users can enjoy a more simple but bold interface.
+Users can delete items by double-clicking on them if they're done or just don't want to keep it.
 
 ## Pomodoro Timer
 

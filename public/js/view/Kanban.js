@@ -17,19 +17,19 @@ export default class Kanban {
 	static columns() {
 		return [
 			{
-				id: 0,
+				id: 1,
 				title: "URGENT / less important"
 			},
 			{
-				id: 1,
+				id: 2,
 				title: "URGENT / IMPORTANT"
 			},
 			{
-				id: 2,
+				id: 3,
 				title: "less urgent / less important"
 			},
 			{
-				id: 3,
+				id: 4,
 				title: "less urgent / IMPORTANT"
 			}
 		];

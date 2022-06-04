@@ -90,10 +90,6 @@ function read() {
 	if (!json) {
 		return [
 			{
-				id: 0,
-				items: []
-			},
-			{
 				id: 1,
 				items: []
 			},
@@ -103,6 +99,10 @@ function read() {
 			},
 			{
 				id: 3,
+				items: []
+			},
+			{
+				id: 4,
 				items: []
 			},
 		];
