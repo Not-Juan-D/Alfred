@@ -131,3 +131,17 @@ A few swaps and presses are not a big deal, compared to rebuilding all your play
 Moreover, almost every wired and wireless earphones and headsets now come with an integrated remote of its own, so even the simplest remotes and controls are not very critical or helpful to the user's convenience.
 
 So based on the points stated above, a music player or controller of any kind was excluded from the final prototype.
+
+# References
+
+pomodoro code referenced from "How to build a Pomodoro Timer App with JavaScript" written by Ayo, Freshman, Apr. 8th, 2022
+code retrieved from https://freshman.tech/pomodoro-timer/
+
+Wikipedia search page code referenced from "How to build a Wikipedia Search App with JavaScript" written by Ayo, 'Freshman', Apr. 8th, 2022
+code retrieved from https://freshman.tech/wikipedia-javascript/
+
+Covey quadrant kanban board code referenced from https://www.youtube.com/watch?v=ijQ6dCughW8 by dcode, Sep. 20th, 2021
+Code retrieved from https://github.com/dcode-youtube/kanban-board
+
+Stopwatch codes from https://jsfiddle.net/2vwcd3a8/ written by 'HARSH VATS', Mar. 7th, 2021
+source found on discussion below https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak
